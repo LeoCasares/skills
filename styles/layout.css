@@ -1,0 +1,80 @@
+/* leos code */
+body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 
+    50px 
+    1fr 
+    1fr 
+    50px
+    ;
+    grid-template-rows:
+    40px
+    1fr
+    1fr
+    1fr 
+    100px
+    ;
+    grid-template-areas: 
+    'nav nav nav nav'
+    'header header header header'
+    '. body body . '
+    '. body body . '
+    'footer footer footer footer'
+    ;
+}
+
+/* nav area */
+.nav {
+    grid-area: nav;
+    background-color: rgba(255, 255, 0, 0.267);
+}
+
+/*header area*/
+.header {
+    grid-area: header;
+    background-color: rgba(0, 128, 0, 0.247);
+}
+
+/*body area */
+.body {
+    margin-top: 20px;
+    grid-area: body;
+    background-color: rgba(0, 0, 255, 0.253);
+    display: grid;
+    grid-template-columns: 
+    1fr
+    ;
+    grid-template-rows: 
+    1fr 
+    1fr
+    ;
+    grid-template-areas: 
+    'body1 body1'
+    'body2 body2'
+    ;
+}
+
+.square1 {
+    margin: 5px;
+    background-color: white;
+    grid-area: body1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.square2 {
+    margin: 5px;
+    background-color: white;
+    grid-area: body2;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* footer area */
+.footer {
+    margin-top: 20px;
+    grid-area: footer;
+    background-color: rgba(255, 0, 0, 0.281);
+}
