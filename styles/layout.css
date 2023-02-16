@@ -84,7 +84,7 @@ body {
 /*header area*/
 .header {
     grid-area: header;
-    background-color: rgba(0, 128, 0, 0.247);
+   
 }
 
 .slider {
@@ -96,7 +96,6 @@ body {
 .body {
     margin-top: 20px;
     grid-area: body;
-    background-color: rgba(0, 0, 255, 0.253);
     display: grid;
     grid-template-columns: 
     0.5fr
@@ -114,6 +113,7 @@ body {
     '.  images-area'
     '. bottom-body'
     ;
+    background-color: var(--secondary-color);
 }
 
 .icon-area {
@@ -243,5 +243,5 @@ body {
 .footer {
     margin-top: 20px;
     grid-area: footer;
-    background-color: rgba(255, 0, 0, 0.281);
+    background-color: var(--secondary-color);
 }
