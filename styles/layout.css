@@ -11,7 +11,7 @@ body {
     ;
     grid-template-rows:
     40px
-    1fr
+    850px
     1fr
     1fr 
     100px
@@ -88,7 +88,8 @@ body {
 }
 
 .slider {
-
+    margin: 0;
+    padding: 0;
 }
 
 /*body area */
@@ -102,12 +103,16 @@ body {
     1fr
     ;
     grid-template-rows: 
-    1fr 
+    100px 
+    1fr
+    1fr
     1fr
     ;
     grid-template-areas: 
+    'icon text-area'
     'icon images-area'
-    'icon images-area'
+    '.  images-area'
+    '. bottom-body'
     ;
 }
 
@@ -115,6 +120,10 @@ body {
     grid-area: icon;
     display: flex;
     flex-direction: column;
+}
+
+.text {
+    grid-area: text-area;
 }
 
 .squares {
@@ -125,33 +134,31 @@ body {
     1fr
     ;
     grid-template-rows: 
-    1fr 
-    1fr
+    500px 
+    500px
     ;
 }
 
 /* squres picture area*/
 
-/* left pictures area */
+/* left pictures area 
 .squares-left {
     display: grid;
     grid-template-rows: 
-    1fr 
-    1fr
+    350px
+    8000px
     ;
 }
 
 .pic-left-top {
     margin: 5px;
-    background-color: white;
-    border: 1px solid black;
     display: flex;
     justify-content: space-around;
 }
 
+
 .left-bottom-pics {
     margin: 5px;
-    background-color: white;
     display: grid;
     grid-template-columns: 
     1fr 
@@ -170,18 +177,16 @@ body {
 
 .left-bottom1 {
     grid-area: lb1;
-    border: 1px solid black;
 }
 
 .left-bottom2 {
     grid-area: lb2;
-    border: 1px solid black;
 }
 
 .left-bottom3 {
     grid-area: lb3;
-    border: 1px solid black;
 }
+*/
 
 /* right pictures area */
 .squares-right {
@@ -194,15 +199,14 @@ body {
 
 .right-top-pics {
     margin: 5px;
-    background-color: white;
     display: grid;
     grid-template-columns: 
     1fr 
     1fr
     ;
     grid-template-rows: 
-    1fr 
-    1fr
+    500px 
+    500px
     ;
     grid-gap: 5px;
     grid-template-areas: 
@@ -213,23 +217,26 @@ body {
 
 .right-top1 {
     grid-area: rt1;
-    border: 1px solid black;
 }
 
 .right-top2 {
     grid-area: rt2;
-    border: 1px solid black;
 }
 
 .right-top3 {
     grid-area: rt3;
-    border: 1px solid black;
 }
 
 .right-bottom-pics {
-    margin: 5px;
-    background-color: white;
-    border: 1px solid black;
+    height:fit-content
+}
+
+.pic4 {
+    height: 100px;
+}
+
+.bottom-body {
+    grid-area: bottom-body;
 }
 
 /* footer area */
