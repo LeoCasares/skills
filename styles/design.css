@@ -48,3 +48,7 @@
     text-decoration:none;
     transform: scale(0);
     transition:0.8s;
+}
+img-1{
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+}
