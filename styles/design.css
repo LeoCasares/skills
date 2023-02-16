@@ -1,10 +1,33 @@
 /* colors */
 :root{
-    --primary-color: #F23A29;
+    --primary-color: #f25129;
     --secondary-color: #F2F2F2;
-    --tertiary-color: #404040;
+    --tertiary-color: #2c2c2c;
+    --extra-color: #ffe600;
 }
 
+.nav{
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 10px #2c2c2c;
+}
+.header video{
+    display: flex;
+    justify-content: center;
+    border: 0px solid transparent;
+}
+
+.header h1{
+    transform: translateY(-300%) translateX(20%);
+    font-size: 90px;
+    text-transform: uppercase;
+    color: var(--extra-color);
+    text-shadow: 0 2px 10px #2c2c2c;
+   
+}
+
+.slider{
+    transform: translateY(-60%);
+}
 /*slide code from Web Dev Tutorials*/
 *{
     margin:0;
