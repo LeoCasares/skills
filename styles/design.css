@@ -17,7 +17,8 @@
 }
 
 .header h1{
-    transform: translateY(-300%) translateX(20%);
+    position: absolute;
+    transform: translateY(-300%) translateX(50%);
     font-size: 90px;
     text-transform: uppercase;
     color: var(--extra-color);
@@ -25,8 +26,21 @@
    
 }
 
+.img .img-text{
+    font-size: 30px;
+}
+
 .slider{
-    transform: translateY(-60%);
+    transform: translateY(-30%);
+}
+
+.slider h3{
+    color:#ffe600;
+    text-transform: uppercase;
+    position: absolute;
+    transform: translatey(-120%) translateX(20%);
+    background-color: #2c2c2c81;
+    padding: 16px;
 }
 /*slide code from Web Dev Tutorials*/
 *{
@@ -43,7 +57,7 @@
 }
 
 .container{
-    width: 1600px;
+    width: 1500px;
     margin:auto;
 }
 .subcontainer{
@@ -64,7 +78,7 @@
     transition:0.5s;
 }
 .slide-img:hover{
-    box-shadow: 0 0 0 200px black inset;
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.39) inset;
 }
 .slide-img a {
     opacity:0;
@@ -72,6 +86,18 @@
     transform: scale(0);
     transition:0.8s;
 }
-img-1{
-    background-image: url(https://picsum.photos/seed/picsum/200/300);
+.img-1{
+    background-image: url("../media/images/hike-in-utah-2021-08-26-23-02-08-utc.jpg");
+}
+.img-2{
+    background-image: url("../media/images/petroglyphs-on-newspaper-rock-in-canyonlands-natio-2021-08-31-09-41-48-utc.jpg");
+}
+.img-3{
+    background-image: url("../media/images/milky-way-in-arches-national-park-utah-2021-08-26-22-28-53-utc.jpg");
+}
+.img-4{
+    background-image: url("../media/images/provo-utah-usa-2021-08-28-06-45-20-utc.jpg");
+}
+.img-5{
+    background-image: url("../media/images/couple-kayaking-sunlight-reflecting-on-water-gre-2022-03-07-23-55-35-utc.jpg");
 }
