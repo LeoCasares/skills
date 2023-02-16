@@ -1,4 +1,4 @@
-/* body area*/
+/* whole page */
 body {
     padding: 0;
     margin: 0;
@@ -8,7 +8,7 @@ body {
 .nav {
     grid-area: nav;
     position: sticky;
-    top: 2px;
+    top: 0;
     background-color: rgba(255, 255, 0, 0.267);
     display: flex;
     flex-direction: row;
@@ -64,4 +64,43 @@ body {
 .header {
     grid-area: header;
     background-color: rgba(0, 128, 0, 0.247);
+}
+
+/* body area */
+.body {
+    display: grid;
+    grid-template-columns:
+    1fr
+    1fr
+    ;
+    grid-template-rows:
+    1fr
+    1fr
+    ;
+    grid-template-areas: 
+    'text text'
+    'checkbox forms'
+    ;
+}
+
+.text-area {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-area {
+    grid-area: checkbox;
+}
+
+.checkbox-area form fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.forms {
+    grid-area: forms;
 }
